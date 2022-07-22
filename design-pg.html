@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KICKSTARTER/Design & Tech</title>
+
+    <style>
+          #header{
+            width:100%;
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 70px;
+            justify-content:space-around;
+            /* align-items: center; */
+            margin:auto;
+            gap:10px
+        }
+        #header>div{
+            border:0px solid;
+            align-items: center;
+        }
+        #header>div:nth-child(1){
+            display: flex;
+            align-items: center;
+        }
+        #header>div:nth-child(2){
+            display:grid;
+            justify-content: center;
+            border:0px solid;
+            height: 100%;
+            width:90%;
+            
+        }
+        #header>div:nth-child(3){
+            display:flex;
+            justify-content: end;
+            align-items: center;
+        }
+        #header>div:nth-child(2)>img{
+            width:100%;
+            height: 50px;
+        }
+        button{
+            border: 0px;
+            font-size: 20px;
+            margin:7px;
+        }
+        
+        #navbar{
+            margin-top:30px;
+            display:flex;
+            align-items: center;
+               width:100%;
+               height:50px;
+               border:1px solid rgb(157, 156, 156);
+        }
+        
+        #box1{
+           display:grid;
+           width:47%;
+           grid-template-columns: repeat(8,auto);
+           grid-template-rows: 100%;
+            margin:auto;
+            justify-content:space-around;
+            align-items: center;
+            gap:10px;
+            color:rgb(104, 102, 102);
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div>
+            <button>Discover</button>
+            <button> Start a project</button>
+        </div>
+        <div><a href="C:\Users\ASUS\OneDrive\Desktop\web101\-unbecoming-sofa-7946\page1.html">
+            <img src="https://ksr-static.imgix.net/tq0sfld-kickstarter-logo-green.png?ixlib=rb-2.1.0&auto=compress%2Cformat&w=1000&fit=min&s=f00262bade8a51249b7d63c8f76ce47f" alt="logo"/> </a>
+        </div>
+        <div>
+            <button>Search</button>
+            <button> Log in</button>
+        </div>
+    </div>
+
+    <div id="navbar">
+        <div id="box1">
+            <div><a href="arts_page.html">Arts</a> </div>
+            <div><a href="comic_pg.html">Comics & illustration</a> </div>
+            <div><a href="design-pg.html" >Design & Tech</a></div>
+            <div><a href="film_pg.html" >Film</a></div>
+            <div><a href="food&craft_page.html">Food & Craft</a></div>
+            <div><a href="games_pg.html" >Games</a></div>
+            <div><a href="Music_pg.html" >Music</a></div>
+            <div><a href="publishing_pg.html" >Publishing</a></div>
+        </div>   
+    </div>
+</body>
+</html>

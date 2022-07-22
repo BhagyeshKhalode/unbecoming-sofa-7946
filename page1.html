@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kichstarter.com/food-craft</title>
+    <title>kichstarter clone</title>
 
     <style>
         #header{
@@ -13,9 +13,9 @@
             grid-template-columns: repeat(3,1fr);
             grid-template-rows: 70px;
             justify-content:space-around;
-            /* align-items: center; */
+            align-items: center;
             margin:auto;
-            gap:10px
+            gap:10px;
         }
         #header>div{
             border:0px solid;
@@ -29,8 +29,9 @@
             display:grid;
             justify-content: center;
             border:0px solid;
-            height: 100%;
-            width:90%;
+            height: 60px;
+            width:100%;
+            border:0px solid;
             
         }
         #header>div:nth-child(3){
@@ -38,9 +39,8 @@
             justify-content: end;
             align-items: center;
         }
-        #header>div:nth-child(2)>img{
+        #header>div:nth-child(2) img{
             width:100%;
-            height: 50px;
         }
         button{
             border: 0px;
@@ -49,7 +49,7 @@
         }
         
         #navbar{
-            margin-top:30px;
+            margin-top:50px;
             display:flex;
             align-items: center;
                width:100%;
@@ -69,6 +69,7 @@
             color:rgb(104, 102, 102);
             font-weight: bold;
             font-size: 20px;
+            flex-wrap:wraps;
         }
 
       h1{
@@ -107,8 +108,8 @@
             <button>Discover</button>
             <button> Start a project</button>
         </div>
-        <div>
-        <img src="https://ksr-static.imgix.net/tq0sfld-kickstarter-logo-green.png?ixlib=rb-2.1.0&auto=compress%2Cformat&w=1000&fit=min&s=f00262bade8a51249b7d63c8f76ce47f" alt="logo"/>
+        <div><a href="page1.html">
+            <img src="https://ksr-static.imgix.net/tq0sfld-kickstarter-logo-green.png?ixlib=rb-2.1.0&auto=compress%2Cformat&w=1000&fit=min&s=f00262bade8a51249b7d63c8f76ce47f" alt="logo"/> </a>
         </div>
         <div>
             <button>Search</button>
@@ -118,14 +119,24 @@
 
     <div id="navbar">
         <div id="box1">
-            <div>Arts</div>
-            <div>Comics & illustration</div>
-            <div>Design & Tech</div>
-            <div>Film</div>
-            <div>Food & Craft</div>
-            <div>Games</div>
-            <div>Music</div>
-            <div>Publishing</div>
+            <!-- <ul>
+                <li><a href="arts_page.html">Arts</a></li>
+                <li><a href="comic_pg.html">Comics & illustration</a></li>
+                <li><a href="design-pg.html" >Design & Tech</a></li>
+                <li><a href="film_pg.html" >Film</a></li>
+                <li>><a href="food&craft_page.html">Food & Craft</a></li>
+                <li><a href="games_pg.html" >Games</a></li>
+                <li><a href="Music_pg.html" >Music</a></li>
+                <li><a href="publishing_pg.html" >Publishing</a></li>
+            </ul> -->
+            <div><a href="arts_page.html">Arts</a> </div>
+            <div><a href="comic_pg.html">Comics & illustration</a> </div>
+            <div><a href="design-pg.html" >Design & Tech</a></div>
+            <div><a href="film_pg.html" >Film</a></div>
+            <div><a href="food&craft_page.html">Food & Craft</a></div>
+            <div><a href="games_pg.html" >Games</a></div>
+            <div><a href="Music_pg.html" >Music</a></div>
+            <div><a href="publishing_pg.html" >Publishing</a></div>
         </div>   
     </div>
    
