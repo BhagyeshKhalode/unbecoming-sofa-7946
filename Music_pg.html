@@ -11,6 +11,9 @@
             height:auto;
             margin:auto;
         }
+
+/* 
+        **************** HEADER********** */
           #header{
             width:100%;
             display:grid;
@@ -51,6 +54,8 @@
             font-size: 20px;
             margin:7px;
         }
+/* 
+        *************** NAVBAR**************** */
         
         #navbar{
             margin-top:50px;
@@ -63,7 +68,7 @@
         
         #box1{
            display:grid;
-           width:47%;
+           width:auto;
            grid-template-columns: repeat(8,auto);
            grid-template-rows: 100%;
             margin:auto;
@@ -91,6 +96,8 @@
            font-size:30px;
            margin:20px;
       }
+
+       /* ******************* FEATURED DIVISION********************** */
 
       #container{
         width:100%;
@@ -135,6 +142,9 @@
     #box2>div>div p{
        font-size: 20px;
     }
+
+    /* **************************SUBSCRIBE********************** */
+
     #subscrBox{
         text-align: center;
         border: 0px solid;
@@ -194,7 +204,7 @@
           height: 45%;
     }
 
-    /* explor */
+    /* ******************* explor   **********************/
 
     .explore{
         box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -222,13 +232,14 @@
 
     }
     .inner>div:first-child>button{
-        background-color: rgb(66, 183, 229);
+        background-color:rgb(193, 228, 242);
         font-size: 22px;
     }
     .inner>div>img{
         width:100%;
     }
-    
+        /* 
+    *************** CREATOR CORNER**************** */
     .corner{
         display:grid;
         grid-template-columns: repeat(2,1fr);
@@ -236,6 +247,7 @@
         gap:70px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
         justify-content: center;
+        margin-top: 30px;
     }
     .corner>div{
         box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
@@ -256,6 +268,50 @@
         align-items: center;
     }
 
+    /*  ********* footer*********** */
+    #footer{
+        border-top:3px solid black;
+        margin-top: 60px;
+        padding:10px;
+    }
+    #footer>div {
+        display:flex ;
+        border: 0px solid;
+        justify-content: center;box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    }
+
+    .about_opt p{
+        font-size: 17px;
+        color:black;text-align: center;
+        margin-top: -7px;
+    }
+#footer>div:nth-child(2)>div{
+    border:0px solid;
+    width:25%;
+    text-align: center;
+} 
+#footer #box1>div>a{
+    font-weight: lighter;
+    color:black;
+    font-size:17px;
+} 
+#footer>div:nth-child(3){
+justify-content: space-between;
+align-items: center;
+padding:0px 30px;
+}
+#footer>div:nth-child(4){
+    justify-content: left;
+}
+#footer>div:nth-child(4)>div{
+    font-weight: lighter;
+    color:black;
+    font-size:12x;
+    margin:10px;
+    text-align: left;
+}
+
+
 
 
 
@@ -267,12 +323,12 @@
             <button>Discover</button>
             <button> Start a project</button>
         </div>
-        <div><a href="C:\Users\ASUS\OneDrive\Desktop\web101\-unbecoming-sofa-7946\page1.html">
+        <div><a href="page1.html">
             <img src="https://ksr-static.imgix.net/tq0sfld-kickstarter-logo-green.png?ixlib=rb-2.1.0&auto=compress%2Cformat&w=1000&fit=min&s=f00262bade8a51249b7d63c8f76ce47f" alt="logo"/> </a>
         </div>
         <div>
             <button>Search</button>
-            <button> Log in</button>
+            <button><a href="login_page.html">Log In</a></button>
         </div>
     </div>
 
@@ -348,8 +404,8 @@
      <div id="subscrBox">
         <h1>It's like the radio but nothing sucks and also it’s a newsletter..</h1>
         <p>Sign up to receive our Kickstarter Music newsletter, delivered once a month.</p>
-        <input id="subscribe" name="subscribe" placeholder="Enter email address"/>
-        <button>Subscribe</button>
+        <input id="subscribe" name="subscribe" placeholder="Enter email address" type="email" name="email"/>
+        <button id="sub_btn">Subscribe</button>
      </div>
      <h3>FOR CREATOR</h3>
        <div class="creator">
@@ -475,7 +531,7 @@
             </div>
         </div>
         
-        <h3></h3>HOME STRETCHS</h3>
+        </h3>HOME STRETCHS</h3>
         <div class="scroll_img">
              <div>
                 <img src="https://ksr-ugc.imgix.net/assets/037/992/696/825c0d7da1b799447af79562a92f0749_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1658151860&auto=format&frame=1&q=92&s=16db252a51c2af11705d0053822f2900" alt="img">
@@ -513,7 +569,7 @@
              <div></div> -->
         </div>
 
-        <h3></h3>MORE TO EXPLORE</h3>
+        </h3>MORE TO EXPLORE</h3>
         <div class="scroll_img">
              <div>
                 <img src="https://cdn.filestackcontent.com/0NGSjh6zSJShDyxqjfrt" alt="img">
@@ -550,7 +606,9 @@
              <div></div>
              <div></div> -->
         </div>
+         
 
+        <h3>CREATOR CORNER</h3>
         <div class="corner">
             <div>
                 <div>
@@ -590,6 +648,89 @@
             </div>
         </div>
 
+        
+        <footer>
+            <div id="footer" style="width:100%;">
+                <div id="navbar" style="box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;">
+                    <div id="box1">
+                        <div><a href="arts_page.html">Arts</a> </div>
+                        <div><a href="comic_pg.html">Comics & illustration</a> </div>
+                        <div><a href="design-pg.html" >Design & Tech</a></div>
+                        <div><a href="film_pg.html" >Film</a></div>
+                        <div><a href="food&craft_page.html">Food & Craft</a></div>
+                        <div><a href="games_pg.html" >Games</a></div>
+                        <div><a href="Music_pg.html" >Music</a></div>
+                        <div><a href="publishing_pg.html" >Publishing</a></div>
+                    </div>   
+                </div>
+                <div>
+                    <div class="about_opt">
+                        <h4>ABOUT</h4>
+                        <p>About us</p>
+                        <p>Our charter</p>
+                        <p>Stats</p>
+                        <p>Press</p>
+                        <p>Jobs</p>
+                    </div>
+                    <div class="about_opt">
+                        <h4>SUPPORT</h4>
+                        <p>Help Center</p>
+                        <p>Our Rules</p>
+                        <p>Creator Resources</p>
+                        <p>Forward Funds</p>
+                        <p>Brand assets</p>
+                        
+                    </div>
+                    <div  class="about_opt">
+                        <h4>MORE FROM KICKSTARTER</h4>
+                        <p>Newsletters</p>
+                        <p>Kickstarter Magazine</p>
+                        <p>The Creative Independent</p>
+                        <p>The Kickstarter Blog</p>
+                        <p>Mobile apps</p>
+                        <p>Research</p>
+                    </div>
+                </div>
+                <div >
+                    <div>
+                            <p ><div style="width:15px;height:15px"><img style="width:100%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Kickstarter-logo-k-color.svg/105px-Kickstarter-logo-k-color.svg.png"></div>Kickstarter.PBC @2022</p>
+                    </div>
+                    <div>
+                        <select>
+                            <option>English</option>
+                            <option>Spanish</option>
+                            <option>Japnies</option>
+                            <option>UK English</option>
+                        </select>
+    
+                        <select>
+                            <option>$ US Doller(USD)</option>
+                            <option>INR</option>
+                            <option>UK pound</option>
+                        </select>
+    
+                    </div>
+                </div>
+                <div>
+                    <div>Trust & Safety</div>
+                    <div>Terms of Use</div>
+                    <div>Privacy Policy</div>
+                    <div>Cookies Policy</div>
+                    <div>Accessibility Statement</div>
+                    <div>CA Notice of Consent</div>
+                </div>   
+            </div>
+        </footer>
    
 </body>
 </html>
+
+
+<script>
+    document.querySelector("#subscribe").addEventListener("submit",userSubscribe);
+
+   function userSubscribe(){
+    event.preventDefault()
+
+   }
+</script>
