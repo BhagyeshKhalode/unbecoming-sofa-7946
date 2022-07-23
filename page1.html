@@ -7,15 +7,21 @@
     <title>kichstarter clone</title>
 
     <style>
-        #header{
+       body{
+            width:80%;
+            height:auto;
+            margin:auto;
+        }
+          #header{
             width:100%;
             display:grid;
             grid-template-columns: repeat(3,1fr);
-            grid-template-rows: 70px;
+            grid-template-rows: 50px;
             justify-content:space-around;
             align-items: center;
             margin:auto;
             gap:10px;
+            margin-top: 30px;
         }
         #header>div{
             border:0px solid;
@@ -28,7 +34,6 @@
         #header>div:nth-child(2){
             display:grid;
             justify-content: center;
-            border:0px solid;
             height: 60px;
             width:100%;
             border:0px solid;
@@ -59,7 +64,7 @@
         
         #box1{
            display:grid;
-           width:47%;
+           width:auto;
            grid-template-columns: repeat(8,auto);
            grid-template-rows: 100%;
             margin:auto;
@@ -99,7 +104,89 @@
       #user_count>div>h1{
         margin-bottom:-10px;
       }
-      
+/*       
+         ************ scroll img ************* */
+         
+         .scroll_img{
+        border:0px solid;
+        width:100%;
+        display:flex;
+        flex-wrap:wrap;
+        height:auto;
+        margin:20px;
+        margin-bottom:45px;
+        padding:40px 0px;
+    }
+    .scroll_img>div {
+        border:0px solid;
+        width:22%;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        padding:7px;
+    }
+    .scroll_img>div>p{
+        font-size: 20px;
+    }
+    .scroll_img>div>img{
+        width:100%;
+    }
+    .creator{
+        width:100%;
+        height:330px;
+        display:flex;
+        justify-content: space-around;
+        margin-bottom: 45px;
+    }
+    .creator>div{
+        width:45%;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+    .creator>div img{
+          width:100%;
+          height: 45%;
+    }
+
+          /*  ********* footer*********** */
+    #footer{
+        border-top:3px solid black;
+        margin-top: 60px;
+        padding:10px;
+    }
+    #footer>div {
+        display:flex ;
+        border: 0px solid;
+        justify-content: center;box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    }
+
+    .about_opt p{
+        font-size: 17px;
+        color:black;text-align: center;
+        margin-top: -7px;
+    }
+#footer>div:nth-child(2)>div{
+    border:0px solid;
+    width:25%;
+    text-align: center;
+} 
+#footer #box1>div>a{
+    font-weight: lighter;
+    color:black;
+    font-size:17px;
+} 
+#footer>div:nth-child(3){
+justify-content: space-between;
+align-items: center;
+padding:0px 30px;
+}
+#footer>div:nth-child(4){
+    justify-content: left;
+}
+#footer>div:nth-child(4)>div{
+    font-weight: lighter;
+    color:black;
+    font-size:12x;
+    margin:10px;
+    text-align: left;
+}
     </style>
 </head>
 <body>
@@ -113,22 +200,13 @@
         </div>
         <div>
             <button>Search</button>
-            <button> Log in</button>
+            <button><a href="login_page.html">Log In</a></button>
         </div>
     </div>
 
     <div id="navbar">
         <div id="box1">
-            <!-- <ul>
-                <li><a href="arts_page.html">Arts</a></li>
-                <li><a href="comic_pg.html">Comics & illustration</a></li>
-                <li><a href="design-pg.html" >Design & Tech</a></li>
-                <li><a href="film_pg.html" >Film</a></li>
-                <li>><a href="food&craft_page.html">Food & Craft</a></li>
-                <li><a href="games_pg.html" >Games</a></li>
-                <li><a href="Music_pg.html" >Music</a></li>
-                <li><a href="publishing_pg.html" >Publishing</a></li>
-            </ul> -->
+            
             <div><a href="arts_page.html">Arts</a> </div>
             <div><a href="comic_pg.html">Comics & illustration</a> </div>
             <div><a href="design-pg.html" >Design & Tech</a></div>
@@ -158,5 +236,171 @@
                         <p>pledges</p>
                 </div>
     </div>
+     
+    <h3>FOR CREATOR</h3>
+    <div class="creator">
+     
+     <div>
+         <img src="https://ksr-ugc.imgix.net/assets/031/532/370/903846edd80170866ed50d2bbacc792c_original.png?ixlib=rb-4.0.%20%20%20%20%20%20%20%20%20%20%20%202&w=700&fit=max&v=1606
+         248627&gif-q=50&lossless=true&s=f988bd54060acf676b2c2fdde1e2e7a5" alt="img">
+         <h2>Lights On</h2>
+         <p>Use Kickstarter to launch a project for your cultural space, event 
+             series, creative organization, or independent business affected by COVID-19.</p>
+     </div>
+     <div>
+         <img src="https://ksr-ugc.imgix.net/assets/031/532/370/903846edd80170866ed50d2bbacc792c_original.png?ixlib=rb-4.0.
+         2&w=700&fit=max&v=1606248627&gif-q=50&lossless=true&s=f988bd54060acf676b2c2fdde1e2e7a5" alt="img">
+         <h2>Lights On</h2>
+         <p>Use Kickstarter to launch a project for your cultural space, event 
+             series, creative organization, or independent business affected by COVID-19.</p>
+     </div>
+    </div>
+  <h3>FRESH FAVORITE </h3>
+     <div class="scroll_img">
+          <div>
+             <img src="https://ksr-ugc.imgix.net/assets/037/829/078/6ed85b766a7337a6c8e0e92d7a32bcb4_original.jpg?ixlib=rb-4.0.2&w=680&fit=max&v=1656722600&gif-q=50&q=92&s=1eb24279ef53c0745534ea70b91e6917" alt="img">
+             <h2>Unstuck in Time: The Kurt Vonnegut Suit</h2>
+             <p>Vibrant and colorful chamber-jazz music inspired by Kurt Vonnegut's beloved works, from Slaughterhouse Five to Cat's Cradle and beyond..</p>
+          </div>
+          <div>
+             <img src="https://ksr-ugc.imgix.net/assets/037/717/055/876908752a941b57320deb1a2fdd8183_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1655831933&auto=format&frame=1&q=92&s=6d97874854842f7dea29df62c5dee9d4" alt="img">
+             <h2>Daughter of Chopin (Album)</h2>
+             <p>Over two hours of Chopin's most beautiful, difficult, and famous piano music, recorded by a composer-pianist of Polish ancestry.</p>
+          </div>
+          <div><img src="https://ksr-ugc.imgix.net/assets/038/041/442/1dda32fa2064b18bbe539edc6a724d09_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1658507134&auto=format&frame=1&q=92&s=3a71f8503fb33f8afaced42829cd536c" alt="img">
+             <h2>Cartoon Babylon</h2>
+             <p>An album of new songs by Daniel Carlson</p></div>
+          <div><img src="https://ksr-ugc.imgix.net/assets/037/542/897/55640ec8c2505518423aa2a489534737_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1654365371&auto=format&frame=1&q=92&s=467f9ad515630c7111d8723326de457d" alt="img">
+             <h2>Two-tec: A tool that can reduce work time and hassle</h2>
+             <p>The "Two-tech bit" is a tool made with Japanese technology, which was inspired by a 35-
+                 year veteran craftsman's thought.</p></div>
+          <!-- <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div> -->
+     </div>
+
+     <h3>TAKING OFF</h3>
+     <div class="scroll_img">
+          <div>
+             <img src="https://ksr-ugc.imgix.net/assets/036/123/809/5e31185aa8eab311bd835a676834246d_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1642711296&auto=format&frame=1&q=92&s=4060b209ac6cf77fbfb7177219914405" alt="img">
+             <h2>Allen Strange's Electronic Music</h2>
+             <p>Reprinting Allen Strange's Electronic Music: Systems, Techniques, and Controls.</p>
+          </div>
+          <div>
+             <img src="https://ksr-ugc.imgix.net/assets/037/804/986/16aad559a975d151a210a92ee650577b_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1656550481&auto=format&frame=1&q=92&s=2a106a926e68b329e6d8208a4f35e4af" alt="img">
+             <h2>Daughter of Chopin (Album)</h2>
+             <p>Over two hours of Chopin's most beautiful, difficult, and famous piano music, recorded by a composer-pianist of Polish ancestry.</p>
+          </div>
+          <div><img src="https://ksr-ugc.imgix.net/assets/037/418/479/5caa319b7347e581dd2eb956cf0422b4_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1653407702&auto=format&frame=1&q=92&s=d470c7a6212cb53ae42b7f039936a71b" alt="img">
+             <h2>Cartoon Babylon</h2>
+             <p>An album of new songs by Daniel Carlson</p></div>
+          <div>
+             <img src="https://ksr-ugc.imgix.net/assets/037/791/186/466f7c2a31c46e6317477925da1b7969_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1656452544&auto=format&frame=1&q=92&s=a05b39a48d0696a53bb1cfd548acf952" alt="img">
+             <h2>LASER makes music</h2>
+             <p>Gay, angry, lo-fi alt rock from Laser, singer/songwriter behind the Doubleclicks & Teaching a Robot to Love. Mountain Goats but trans?</p>
+         </div>
+          <!-- <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div> -->
+     </div>
+
+    <footer>
+        <div id="footer" style="width:100%;">
+            <div id="navbar" style="box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;">
+                <div id="box1">
+                    <div><a href="arts_page.html">Arts</a> </div>
+                    <div><a href="comic_pg.html">Comics & illustration</a> </div>
+                    <div><a href="design-pg.html" >Design & Tech</a></div>
+                    <div><a href="film_pg.html" >Film</a></div>
+                    <div><a href="food&craft_page.html">Food & Craft</a></div>
+                    <div><a href="games_pg.html" >Games</a></div>
+                    <div><a href="Music_pg.html" >Music</a></div>
+                    <div><a href="publishing_pg.html" >Publishing</a></div>
+                </div>   
+            </div>
+            <div>
+                <div class="about_opt">
+                    <h4>ABOUT</h4>
+                    <p>About us</p>
+                    <p>Our charter</p>
+                    <p>Stats</p>
+                    <p>Press</p>
+                    <p>Jobs</p>
+                </div>
+                <div class="about_opt">
+                    <h4>SUPPORT</h4>
+                    <p>Help Center</p>
+                    <p>Our Rules</p>
+                    <p>Creator Resources</p>
+                    <p>Forward Funds</p>
+                    <p>Brand assets</p>
+                    
+                </div>
+                <div  class="about_opt">
+                    <h4>MORE FROM KICKSTARTER</h4>
+                    <p>Newsletters</p>
+                    <p>Kickstarter Magazine</p>
+                    <p>The Creative Independent</p>
+                    <p>The Kickstarter Blog</p>
+                    <p>Mobile apps</p>
+                    <p>Research</p>
+                </div>
+            </div>
+            <div >
+                <div>
+                        <p ><div style="width:15px;height:15px"><img style="width:100%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Kickstarter-logo-k-color.svg/105px-Kickstarter-logo-k-color.svg.png"></div>Kickstarter.PBC @2022</p>
+                </div>
+                <div>
+                    <select>
+                        <option>English</option>
+                        <option>Spanish</option>
+                        <option>Japnies</option>
+                        <option>UK English</option>
+                    </select>
+
+                    <select>
+                        <option>$ US Doller(USD)</option>
+                        <option>INR</option>
+                        <option>UK pound</option>
+                    </select>
+
+                </div>
+            </div>
+            <div>
+                <div>Trust & Safety</div>
+                <div>Terms of Use</div>
+                <div>Privacy Policy</div>
+                <div>Cookies Policy</div>
+                <div>Accessibility Statement</div>
+                <div>CA Notice of Consent</div>
+            </div>   
+        </div>
+    </footer>
 </body>
 </html>
