@@ -172,7 +172,7 @@ padding:0px 30px;
      <form>
         <div class="log_div">
           <h1>Log in</h1>
-          <input placeholder="Email" type="email" name="email" id="log_email"/><br>
+          <input placeholder="Email" type="email" name="email" id="email"/><br>
           <input placeholder="Password" type="pass" name="pass" id="pass"/><br>
           <p style="font-size:15px; color:rgb(52, 52, 238)">Forget your password?</p>
           <button id="log_btn" value="Log in" style="font-size:20px;height:50px;background-color:rgb(143, 183, 226)">Log In</button><br>
@@ -257,3 +257,33 @@ padding:0px 30px;
     </footer>
 </body>
 </html>
+
+<script>
+    let form=document.querySelector("form");
+    let signupLS=JSON.parse(localStorage.getItem("signup"))||[];
+    
+
+    form.addEventListener("submit",function(ele){
+        ele.preventDefault();
+        if(signupLS.length===0){
+            alert("No user till Now");
+            return;
+        }
+        let obj={
+            email:form.email.value,
+            password:form.pass.value,
+        }
+             let flag=true;
+        signupLS.forEach(function(ele){
+            if(ele.email===obj.email && ele.pass ===obj.pass){
+                flag=false;
+                localStorage.setItem("login",JSON.stringify(ele));
+                alert("Log In Successfull");
+                window.location.href="index.html";
+            }
+        })
+        if(falg===true){
+            alert("User does not exist")
+        }
+    })
+</script>

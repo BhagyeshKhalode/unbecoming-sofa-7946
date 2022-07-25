@@ -176,7 +176,8 @@ padding:0px 30px;
                     <a href="login_page.html">Log In</a></button>
             </div>
           <h1>Sign up</h1>
-          <input placeholder="Email" type="email" name="email" id="log_email"/><br>
+          <input placeholder="name" type="name" name="name" id="name"/><br>
+          <input placeholder="Email" type="email" name="email" id="email"/><br>
           <input placeholder="Password" type="pass" name="pass" id="pass"/><br>
           <p style="font-size:18px; color:black;">Send me a weekly mix of handpicked projects, plus occasional Kickstarter news</p>
           <p style="font-size:18px; color:black;">Contact me about participating in Kickstarter research</p>
@@ -259,3 +260,25 @@ padding:0px 30px;
     </footer>
 </body>
 </html>
+
+<script>
+let form= document.querySelector("form");
+let signupLS=JSON.parse(localStorage.getItem("signup"))||[];
+
+form.addEventListener("submit",function(e){
+    e.preventDefault();
+    let obj={
+        name:form.name.value,
+        email:form.email.value,
+        password:form.pass.value,
+    }
+    if(obj.name==" " || obj.email==" " || obj.pass==" "){
+        alert("feild empty");
+        return;
+    }
+    signupLS.push(obj);
+    localStorage.setItem("signup",JSON.stringify(signupLS));
+
+})
+
+</script>
